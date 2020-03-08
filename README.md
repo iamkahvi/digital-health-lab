@@ -1,5 +1,5 @@
 # Digital Health Lab - Coding Challenge
-
+This project was bootstrapped with [Create React App](https://create-react-app.dev/docs/getting-started/)
 ## Overview
 - create a responsive landing page with a title and a header using ReactJS
 OR
