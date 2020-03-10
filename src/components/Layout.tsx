@@ -1,6 +1,10 @@
 import React from "react";
-import { PageWrapper } from "../styles/components";
+import { PageWrapper, FlexCenter } from "../styles/components";
 
 export default function Layout(props: any) {
-  return <PageWrapper>{props.children}</PageWrapper>;
+  return (
+    <FlexCenter>
+      <PageWrapper>{props.children}</PageWrapper>
+    </FlexCenter>
+  );
 }
