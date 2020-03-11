@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
+import About from "./pages/About";
 import { Router, RouteComponentProps } from "@reach/router";
 
 // Creating new route component for TS types
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Router>
         <RouterPage pageComponent={<Home />} path="/" />
-        <RouterPage pageComponent={<Login />} path="/login" />
+        <RouterPage pageComponent={<About />} path="/about" />
       </Router>
     </div>
   );

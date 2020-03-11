@@ -1,17 +1,24 @@
 import React from "react";
-import { Link } from "@reach/router";
-import { NavBar, NavBarWrapper, LinkWrapper } from "../styles/components";
+import { NavBar, NavBarWrapper, NavBarLink } from "../styles/components";
+
+const isActive = ({ isCurrent }: any) => {
+  return {
+    style: {
+      textDecoration: isCurrent ? "underline" : "none"
+    }
+  };
+};
 
 export default function Header() {
   return (
     <NavBarWrapper>
       <NavBar>
-        <LinkWrapper>
-          <Link to="/">Home</Link>
-        </LinkWrapper>
-        <LinkWrapper>
-          <Link to="/login">Login</Link>
-        </LinkWrapper>
+        <NavBarLink getProps={isActive} to="/">
+          Home
+        </NavBarLink>
+        <NavBarLink getProps={isActive} to="/about">
+          About
+        </NavBarLink>
       </NavBar>
     </NavBarWrapper>
   );
