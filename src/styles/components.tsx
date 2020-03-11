@@ -32,6 +32,10 @@ export const NavBar = styled.nav`
 `;
 
 export const PageWrapper = styled.div`
+  @media only screen and (max-width: 768px) {
+    border: none;
+    margin: 0 0 1em 0;
+  }
   border: 2px solid black;
   max-width: 50em;
   width: 100%;
